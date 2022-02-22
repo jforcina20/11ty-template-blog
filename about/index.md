@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+I'm John, a student in IST 402 learning about web components. Here are my class blog posts.
