@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with Web Components.</title>
+    <meta name="description" content="First post for IST 402 about using open-wc.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Your Blog Name">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Your Blog Name">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/">Your Blog Name</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/about/">About Me</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+
+      <!-- Delete this message -->
+      <div class="warning">
+        <ol>
+          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
+          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
+          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
+        </ol>
+        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+      </div>
+      <!-- Stop deleting -->
+
+      <h1>Getting started with Web Components.</h1>
+
+<time datetime="2022-01-16">16 Jan 2022</time><a href="/tags/labs/" class="post-tag">labs</a>
+
+<p>Prior to this week, when I thought of web development I thought of HTML and CSS. I only had a vague understanding of JavaScript and had heard of Node.js but didn't know what it was. Now join me in getting all the necessary tooling installed to launch a simple hello-world web component.</p>
+<h2 id="what-are-web-components" tabindex="-1">What are web components? <a class="direct-link" href="#what-are-web-components" aria-hidden="true">#</a></h2>
+<p>Web components are a collection of web platform APIs that can be used to create custom and reusable HTML tags to be used in web pages and web apps. Learn more about them <a href="https://www.webcomponents.org/introduction">here.</a></p>
+<p>We'll be using open-wc in this post. It simplifies the process of developing web components by providing guides, tools, and libraries. Check out the <a href="https://open-wc.org/">open-wc website</a> to learn more.</p>
+<h2 id="node.js" tabindex="-1">Node.js <a class="direct-link" href="#node.js" aria-hidden="true">#</a></h2>
+<p>This is the easiest step. To download Node.js, head over to <a href="https://nodejs.org/">https://nodejs.org/</a> and click to download the LTS version for more stability. Download the installer and run it.</p>
+<p>Why do you need Node.js? Node is a lightweight JavaScript runtime that allows you to run server-side programming to quickly build network applications.</p>
+<h2 id="npm" tabindex="-1">npm <a class="direct-link" href="#npm" aria-hidden="true">#</a></h2>
+<p>npm is a package manager for JavaScript and is the default package manager for Node.js. Basically, npm lets you use code written by others in your own project without having to write it yourself.</p>
+<p>When you installed Node, npm was installed at the same time. You can check if it was installed and see which version you have by opening terminal and running <code>npm --version</code></p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ugxk9mnpcq1mr24x3t9l.png" alt="Image description"></p>
+<h2 id="yarn" tabindex="-1">Yarn <a class="direct-link" href="#yarn" aria-hidden="true">#</a></h2>
+<p>Yarn is another JavaScript package manager, similar to npm. This is an optional step, you can choose to install it after installing Node and npm. To install, open terminal and run <code>npm install --global yarn</code></p>
+<p>You can check to make sure it installed by running <code>yarn --version</code></p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c9vi2rp1o4dlf45qn4yh.png" alt="Image description"></p>
+<h2 id="create-a-directory-for-your-web-component" tabindex="-1">Create a directory for your web component <a class="direct-link" href="#create-a-directory-for-your-web-component" aria-hidden="true">#</a></h2>
+<p>Now that all the tooling is installed, you're just about ready to get started. First, create a directory for your project. I created one by running <code>mkdir -p ~/Documents/git/ist402</code> but you can name it or place it wherever you want.</p>
+<h2 id="starting-your-open-wc-component" tabindex="-1">Starting your open-wc component <a class="direct-link" href="#starting-your-open-wc-component" aria-hidden="true">#</a></h2>
+<p>After navigating to your desired directory, run <code>npm init @open-wc</code> If there are no problems, you should be greeted with this screen:</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0n1giwtztfnj8aapgzkn.png" alt="Image description"></p>
+<p>Congratulations! You're ready to start working on your web component. Push enter to start your new project and choose the settings you want. Here's a list of everything I chose:</p>
+<ul>
+<li>Web Component</li>
+<li>Enable Linting, Testing, and Demoing</li>
+<li>No TypeScript</li>
+<li>Install dependencies with yarn</li>
+</ul>
+<p>To start your component, run either <code>npm start</code> or <code>yarn start</code> depending on which package manager you installed. Your default web browser will launch and you'll see your web component!</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wdvvc7fvkf66w412yx3o.png" alt="Image description"></p>
+<h2 id="what-do-these-files-do" tabindex="-1">What do these files do? <a class="direct-link" href="#what-do-these-files-do" aria-hidden="true">#</a></h2>
+<p>Even a simple Hello World web component relies on many files for their functionality. You can check them out yourself (especially the /src folder) and see what's going on behind the scenes.</p>
+<p>Checking out <a href="https://lit.dev/playground/#sample=examples/full-component">Lit playground</a> was very helpful in understanding the JavaScript used in a boilerplate web component like the one I just made.</p>
+<p>I went through and commented what I thought several code blocks do. Take a look at my <a href="https://github.com/jforcina20/edtechjoker-lab1">git repository</a> for this lab and see that I still have a lot to learn about web components myself!</p>
+
+<hr>
+<ul><li>Next: <a href="/posts/secondpost/">Using the Wikipedia API via the wikipedia-query tag</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /posts/firstpost/ -->
+  </body>
+</html>
