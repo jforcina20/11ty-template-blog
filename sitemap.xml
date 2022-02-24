@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://example.com/11ty-template-blog/posts/firstpost/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/posts/firstpost/</loc>
     <lastmod>2022-01-16</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/posts/secondpost/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/posts/secondpost/</loc>
     <lastmod>2022-01-30</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/about/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/about/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/posts/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/posts/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/page-list/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/page-list/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/tags/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/tags/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/11ty-template-blog/tags/labs/</loc>
+    <loc>https://jforcina20.github.io/11ty-template-blog/tags/labs/</loc>
     <lastmod>2022-02-24</lastmod>
   </url>
 </urlset>
